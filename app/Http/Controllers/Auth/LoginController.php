@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
@@ -41,22 +42,55 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-    public function login()
+    public function login(Request $request)
     {
-        try {
-            $check_auth_user = User::where('email', request()->email)->first();
-            if ($check_auth_user && Hash::check(request()->password, $check_auth_user->password)) {
-                DB::table('oauth_access_tokens')->where("user_id", $check_auth_user->id)->update(['revoked' => 1]);
-                // auth()->login($check_auth_user, request()->remember);
 
-                $data['access_token'] = $check_auth_user->createToken('accessToken')->accessToken;
-                $data['user'] = $check_auth_user;
-                return response()->json($data, 200);
-            } else {
-                return response()->json('user not found', 417);
-            }
-        } catch (\Exception $e) {
-            return messageResponse($e->getMessage(), 500, 'server_error');
+        if (!$request->input('email') && !$request->input('password')) {
+            return response()->json(
+                [
+                    'status' => 'validation_error',
+                    'errors' => [
+                        'email' => "This email field is required",
+                        'password' => "This password field is required",
+                    ]
+                ],
+                422
+            );
+        }
+
+        if (!$request->input('email')) {
+            return response()->json(
+                [
+                    'status' => 'validation_error',
+                    'errors' => [
+                        'email' => "This email field is required",
+                    ]
+                ],
+                422
+            );
+        }
+
+        if (!$request->input('password')) {
+            return response()->json(
+                [
+                    'status' => 'validation_error',
+                    'errors' => [
+                        'password' => "This password field is required",
+                    ]
+                ],
+                422
+            );
+        }
+
+        $check_auth_user = User::where('email', $request->email)->first();
+
+        if ($check_auth_user && Hash::check($request->password, $check_auth_user->password)) {
+            DB::table('oauth_access_tokens')->where("user_id", $check_auth_user->id)->update(['revoked' => 1]);
+            $data['access_token'] = $check_auth_user->createToken('accessToken')->accessToken;
+            $data['user'] = $check_auth_user;
+            return response()->json($data, 200);
+        } else {
+            return response()->json(['status' => 'error', 'message' => 'Sorry,user not found'], 404);
         }
     }
 }
