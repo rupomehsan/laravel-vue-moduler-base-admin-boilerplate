@@ -3,8 +3,8 @@ import Dashboard from "../Dashboard.vue"
 
 import user_routes from "../management/user/setup/routes";
 
-// import blog_category_routes from "../management/BlogManagement/Category/setup/routes";
-// import blog_routes from "../management/BlogManagement/Blog/setup/routes";
+import blog_category_routes from "../management/BlogManagement/Category/setup/routes";
+import blog_routes from "../management/BlogManagement/Blog/setup/routes";
 
 
 
@@ -21,8 +21,8 @@ const routes = {
         user_routes,
 
 
-        // blog_category_routes,
-        // blog_routes,
+        blog_category_routes,
+        blog_routes,
 
     ]
 };

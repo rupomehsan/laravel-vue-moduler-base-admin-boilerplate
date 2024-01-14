@@ -16,7 +16,7 @@
                     <div class="menu-title">Dashboard</div>
                 </router-link>
             </li>
-            <!-- <li class="menu-label">Blog Management</li>
+            <li class="menu-label">Blog Management</li>
             <side-bar-drop-down-menus :icon="`fa fa-plus`" :menu_title="`Blog Manage`" :menus="[
                 {
                     route_name: `AllCategory`,
@@ -26,17 +26,8 @@
                     route_name: `AllBlog`,
                     title: `Blogs`,
                 },
-            ]" /> -->
-            <li class="menu-label">User Management</li>
-            <li>
-                <router-link :to="{ name: `AllUser` }" href="javascript:void();" aria-expanded="false">
-                    <div class="parent-icon">
-                        <i class="fa fa-users"></i>
-                    </div>
-                    <div class="menu-title">All Users</div>
-                </router-link>
-            </li>
-          
+            ]" />
+           
 
         </ul>
     </div>

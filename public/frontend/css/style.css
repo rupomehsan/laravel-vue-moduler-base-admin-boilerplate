@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('../../assets/images/black3.gif');
     background-repeat: repeat-y;
@@ -206,7 +210,7 @@ li.pill a {
     content: "";
     position: absolute;
     top: 15%;
-    left: 10%;
+    left: 12%;
     width: 440px;
     height: 450px;
     transform: translate(-50%, -50%);
@@ -413,6 +417,9 @@ li.pill a {
     background-repeat: no-repeat;
     z-index: 2;
     animation: rotate2 40s linear infinite;
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .one::before {
@@ -428,7 +435,9 @@ li.pill a {
     background-repeat: no-repeat;
 
     transform: translate3d(-6px, -19.971px, -3px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .two::before {
@@ -443,7 +452,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(-21.971px, 13.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .three::before {
@@ -458,6 +469,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(-35.971px, 125px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .four::before {
@@ -472,7 +486,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(-30.971px, 283px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .five::before {
@@ -487,7 +503,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(-42.971px, 422px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 
 }
 
@@ -503,7 +521,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(-36.971px, 530px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .seven::before {
@@ -518,7 +538,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(-20.971px, 645px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .eight::before {
@@ -533,7 +555,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(10.029px, 615px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .nine::before {
@@ -548,7 +572,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(20.029px, 537px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .ten::before {
@@ -563,7 +589,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(10.029px, 390px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .elaven::before {
@@ -578,7 +606,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(30.029px, 155px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 #curcleWrapper .laguage-image .twelve::before {
@@ -593,7 +623,9 @@ li.pill a {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate3d(10.029px, 15px, 5px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
-
+    -webkit-box-shadow: 1px 1px 5px 5px rgb(39 175 201 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
 }
 
 /* banner  section  */

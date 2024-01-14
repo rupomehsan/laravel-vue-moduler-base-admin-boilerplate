@@ -57,7 +57,7 @@ export default {
         let prev_url = window.sessionStorage.getItem('prevurl');
         let token = localStorage.getItem('token');
         if (token) {
-            window.location.hash = prev_url || "/admin#";
+            window.location.hash = prev_url || "/admin#/dashboard";
         } else {
             window.location.href = 'login';
         }

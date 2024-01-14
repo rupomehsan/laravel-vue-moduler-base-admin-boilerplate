@@ -12,18 +12,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
     <link href="{{asset('frontend/css/style.css')}}" rel="stylesheet">
-    <!-- JS -->
-    <script src="{{asset('frontend')}}/js/jquery-2.1.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script src="{{asset('assets')}}/js/owl.carousel.min.js"></script>
-    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-    <script src="{{asset('frontend')}}/js/scrolling-parallax.js"></script>
-    <script src="{{asset('js/app.js')}}"></script>
-    <script src="{{asset('frontend/js/custom.js')}}"></script>
-    @stack('custom-js')
-    <script src="{{asset('frontend/js/turbolinks.js')}}"></script>
+ 
 </head>
 
 <body>
